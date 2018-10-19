@@ -11,6 +11,4 @@
         <li>la troisieme activite</li>
     </ul>
 
-    <button id="clubs" type="submit">clubs</button>
-    <button id="localisation" type="submit">localisation</button>
 @endsection

@@ -15,3 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+// Ici les routes qui servent a afficher les page avec la method show de chaque controller
+Route::get('demarche', 'demarcheController@show');
+Route::get('localisation', 'localisationController@show');
+Route::get('structure', 'structureController@show');
+Route::get('activite', 'activiteController@show');

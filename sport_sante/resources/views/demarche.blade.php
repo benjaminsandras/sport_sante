@@ -1,9 +1,11 @@
 @extends('template')
 
 @section('titre')
-    Localisation
+Démarches
 @endsection
 
 @section('contenu')
+
+    <h1>Démarches</h1>
 
 @endsection

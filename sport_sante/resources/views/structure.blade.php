@@ -10,7 +10,4 @@
         <li>le deuxieme club</li>
         <li>le troisème club</li>
     </ul>
-
-    <button id="activites" type="submit">activités</button>
-    <button id="localisation" type="submit">localisation</button>
 @endsection

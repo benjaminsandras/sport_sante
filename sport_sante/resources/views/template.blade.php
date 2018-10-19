@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>@yield('titre')</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../../sport_sante/node_modules/framework7/css/framework7.min.css">
+    <link rel="stylesheet" href="../../sport_sante/public/node_modules/framework7/css/framework7.min.css">
 
 </head>
 <body>
@@ -13,7 +13,9 @@
     @yield('contenu')
 
 
-    <button id="back" type="submit">Retourné à l'accueil</button>
+    <button id="back" type="submit" class="col button button-fill color-green">Retourné à l'accueil</button>
 
+    <script src="../../sport_sante/public/node_modules/framework7/js/framework7.min.js"></script>
+    <script src="../../sport_sante/public/js/f7app.js"></script>
 </body>
 </html>

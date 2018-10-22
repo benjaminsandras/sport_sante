@@ -4,10 +4,16 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 
+use App\Http\Controllers\Controller;
+use App\activite;
+
+
 class activiteController extends Controller
 {
     public function show()
     {
-        return view('activite');
-    }
+    	$activites=Activite::all();
+        return view('activite', compact('activites'));
+	}
 }
+

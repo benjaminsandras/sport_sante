@@ -89,6 +89,8 @@
                     <a href="https://nova.laravel.com">Nova</a>
                     <a href="https://forge.laravel.com">Forge</a>
                     <a href="https://github.com/laravel/laravel">GitHub</a>
+                    <a href="http://localhost/SportSante/sport_sante/public/Accueil">sportSanteAccueil</a>
+
                 </div>
             </div>
         </div>

@@ -6,27 +6,73 @@
 
 @section('contenu')
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/act.js"></script>
 
-		<table>
-			<tr>
-				<th>Nom</th>
-				<th>Public</th>
+<div class="page-content">
+	<div class="row">
+
+	<div class="col-25">
+
+
+
+
+	  
+		   
+		    
+		
+
+
+		<!-- <button type="submit" href="{{ URL::action('activiteController@biip') }}" class="button col">Button</button> -->
+		
+	</div>
+	<div class="col-50">
+		@foreach($activites as $act)
+
+			<div class="card">
+  <div class="card-header">{{ $act->nom }}</div>
+  <div class="card-content">
+    <div class="list media-list">
+      <ul>
+        <li class="item-content">
+          <div class="item-media"></div>
+          <div class="item-inner">
+            <div class="item-title-row">
+              <div class="item-title">{{ $act->public }}</div>
+            </div>
+            <div class="item-subtitle">Beatles</div>
+          </div>
+        </li>
+        <li class="item-content">
+          <div class="item-media"></div>
+          <div class="item-inner">
+            <div class="item-title-row">
+            	<form action= "biip" method="GET">
+            		
+        <button type="submit" id="coucou" class="button col"></button>
+            	</form>
+            </div>
+            <div class="item-subtitle">coucou</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="card-footer"> <span>January 20, 2015</span><span>5 comments</span></div>
+</div>
 				
-			</tr>
-			@foreach($activites as $act)
-				<tr>
-					<td>{{ $act->nom }}</td>
-					<td>{{ $act->public }}</td>
 					
-					<!-- <td><form method="post" action="customer_detail"><input class="hidden" type="number" name="id" value="{{$customer->id}}"><button type="submit">Détails</button></form></td> -->
-				</tr>
+			
 			@endforeach
-		</table>
+		
+	</div>
+	<div class="col-25">
+		
+	</div>
 
-    <ul>
-        <li>la premiere activité</li>
-        <li>la deuxieme activite</li>
-        <li>la troisieme activite</li>
-    </ul>
+		</div>	
+	</div>				
+		
 
+   
 @endsection

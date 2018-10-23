@@ -20,3 +20,7 @@ Route::get('demarche', 'demarcheController@show');
 Route::get('localisation', 'localisationController@show');
 Route::get('structure', 'structureController@show');
 Route::get('activite', 'activiteController@show');
+Route::get('biip/{nom}','activiteController@biip');
+	
+
+

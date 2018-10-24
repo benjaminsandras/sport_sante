@@ -5,7 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\reseaux;
 
-class ReseauxControleur extends Controller
+class ReseauxController extends Controller
 {
     public function show()
     {

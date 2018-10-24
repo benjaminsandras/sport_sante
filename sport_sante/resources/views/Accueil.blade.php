@@ -4,10 +4,9 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-        <!-- <link rel="stylesheet" href="node_modules/framework7/css/framework7.min.css"> -->
-        <link rel="stylesheet" href="{{ asset('css/AccueilStyle.css') }}">
         <link rel="stylesheet" href="{{ asset('node_modules/framework7/css/framework7.min.css') }}">
         <link rel="stylesheet" href="{{ asset('node_modules/framework7/css/framework7-icons-master/css/framework7-icons.css') }}">
+        <link rel="stylesheet" href="{{ asset('css/AccueilStyle.css') }}">
 
         <title>PageAccueil</title>
     </head>
@@ -25,37 +24,52 @@
             <div class="popover popover-links">
                 <div class="popover-inner">
                     <div class="list">
-                        <ul>
-                        <li><a class="list-button item-link" href="#">Liens</a></li>
-                        <li><a class="list-button item-link" href="{{ url('activite')}}">Partenaires</a></li>
-                        <li><a class="list-button item-link" href="#">Mentions légales</a></li><br>
-                        <a href="#" style="display:inline-block" class="button button-to-popover">close</a>
-                        </ul>
+                    
+
+                        <form action="{{ route('namePartenaires') }}" method='GET'>
+                            <p class="row">
+                                <button class="col button button-fill color-orange">Partenaires</button>   
+                            </p>
+                        </form>
+
+                        <form action="{{ route('nameMentionsLegales') }}" method='GET'>
+                            <p class="row">
+                                <button class="col button button-fill color-orange">Mentions légales</button>   
+                            </p>
+                        </form>
+
+                        <form action="{{ route('nameAccueil') }}" method='GET'>
+                            <p class="row">
+                                <button class="col button button-fill color-orange">Retour accueil</button>   
+                            </p>
+                        </form>
+                        
                     </div>
                 </div>
             </div>
 
         
             <div id="button">  
+
                 <form action='activite' method='GET'>
                     <p class="row">
                         <button class="col button button-fill color-green">Activités</button>
                     </p>
                 </form>
 
-                <form action='secteur'method='GET'>
+                <form action="{{ route('nameLocalisation') }}" method='GET'>
                     <p class="row">
-                        <button class="col button button-fill color-orange">Secteur</button>   
+                        <button class="col button button-fill color-orange">Localisation</button>   
                     </p>
                 </form>
 
-                <form action='Réseaux'method='GET'>
+                <form action='reseaux'method='GET'>
                     <p class="row">
                         <button class="col button button-fill color-red">Réseaux</button>
                     </p>
                 </form>
 
-                <form action='Démarches'method='GET'>
+                <form action='demarche'method='GET'>
                     <p class="row">
                         <button class="col button button-fill color-blue">Démarches</button>
                     </p>

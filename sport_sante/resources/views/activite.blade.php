@@ -18,7 +18,7 @@
 
 
 	  
-		   
+		 
 		    
 		
 
@@ -49,7 +49,7 @@
             <div class="item-title-row">
             	<form action= "biip" method="GET">
             		
-        <button type="submit" id="coucou" class="button col"></button>
+        <button type="submit" id="coucou" class="button col">test</button>
             	</form>
             </div>
             <div class="item-subtitle">coucou</div>

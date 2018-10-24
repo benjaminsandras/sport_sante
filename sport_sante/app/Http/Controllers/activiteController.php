@@ -16,8 +16,8 @@ class activiteController extends Controller
         return view('activite', compact('activites'));
 	}
 
-	public function biip($nom){
-		$activites = Activite::where('nom',$nom)->get();
+	public function biip(){
+		$activites = Activite::where('nom','Activité Physique Adaptée')->get();
 		return view('activite', compact('activites'));
 	}
 

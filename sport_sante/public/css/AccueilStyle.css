@@ -5,7 +5,21 @@
     /* margin-top: 10%; */
 }
 
+#back {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    /* margin-top: 10%; */
+}
 #button {
     margin-top: 20%;
 }
+
+.right {
+    margin-left: 5%;
+    margin-top: 5%;
+}
+
+
+
 

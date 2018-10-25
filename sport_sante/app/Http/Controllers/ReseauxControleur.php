@@ -11,8 +11,15 @@ class ReseauxControleur extends Controller
     {
     	$reseaux = reseaux::all();
         return view('reseaux', compact("reseaux"));
+    	
     }
 
-    
+    public function trie_alphabetique()
+    {
+    	$reseaux = reseaux::orderBy('name', 'asc')
+               ->get();
+        return view('reseaux', compact("reseaux"));
+    }
+  
 }
 ?>

@@ -7,20 +7,50 @@
         <link rel="stylesheet" href="{{ asset('node_modules/framework7/css/framework7.min.css') }}">
         <link rel="stylesheet" href="{{ asset('node_modules/framework7/css/framework7-icons-master/css/framework7-icons.css') }}">
         <link rel="stylesheet" href="{{ asset('css/AccueilStyle.css') }}">
-
         <title>PageAccueil</title>
     </head>
     
+    <?php
+    
+
+        try {
+            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+        }
+        catch(Exception $e)
+        {
+            die('Erreur : ' . $e->getMessage());
+        }
+
+        $reponse = $db->query('SELECT * FROM Image WHERE id=2');
+        while($donnees=$reponse->fetch()){
+            echo '<body id="style" style="background-image:url(' . $donnees['description'] . ');background-repeat: no-repeat;background-size:cover;background-position: center center;background-attachment: fixed;Z-index: -1"> ' . '</body>';
+        }
+    ?>    
+
     <body>
 
         <div class="pageContent"> 
-            
+               
             <div class="right">
                 <a class="link popover-open" href="#" data-popover=".popover-links">
                     <i class="icon f7-icons color-black">menu</i>
                 </a>
             </div>
+                <?php
 
+                    try {
+                        $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+                    }
+                    catch(Exception $e)
+                    {
+                        die('Erreur : ' . $e->getMessage());
+                    }
+
+                    $reponse = $db->query('SELECT * FROM Image WHERE id=3');
+                    while($donnees=$reponse->fetch()){
+                        echo '<img class="displayed" src=" ' . $donnees['description'] . ' ">';
+                    }
+                ?>     
             <div class="popover popover-links">
                 <div class="popover-inner">
                     <div class="list">
@@ -48,6 +78,7 @@
                 </div>
             </div>
 
+
         
             <div id="button">  
 
@@ -74,12 +105,41 @@
                         <button class="col button button-fill color-blue">Démarches</button>
                     </p>
                 </form>
-                
-            </div> 
 
+            </div> 
         </div>
 
+        <?php
 
+            try {
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+            }
+            catch(Exception $e)
+            {
+                die('Erreur : ' . $e->getMessage());
+            }
+
+            $reponse = $db->query('SELECT * FROM Image WHERE id=4');
+            while($donnees=$reponse->fetch()){
+                echo '<img class="displayed2" src=" ' . $donnees['description'] . ' ">';
+            }
+        ?>
+
+        <?php
+
+            try {
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+            }
+            catch(Exception $e)
+            {
+                die('Erreur : ' . $e->getMessage());
+            }
+
+            $reponse = $db->query('SELECT * FROM Image WHERE id=5');
+            while($donnees=$reponse->fetch()){
+                echo '<img class="displayed3" src=" ' . $donnees['description'] . ' ">';
+            }
+        ?>
         <script type="text/javascript" src="node_modules/framework7/js/framework7.min.js"></script>
         <script type="text/javascript" src="js/f7app.js"></script>
 

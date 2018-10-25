@@ -31,6 +31,4 @@ Route::get('reseaux', 'ReseauxController@show')->name('nameReseaux');
 
 Route::get('demarche', 'demarcheController@show')->name('nameDemarche');
 
-
-
-
+Route::get('map', 'mapController@show');

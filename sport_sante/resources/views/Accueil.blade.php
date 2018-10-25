@@ -27,19 +27,19 @@
                     
 
                         <form action="{{ route('namePartenaires') }}" method='GET'>
-                            <p class="row">
+                            <p class="row" id="un">
                                 <button class="col button button-fill color-orange">Partenaires</button>   
                             </p>
                         </form>
 
                         <form action="{{ route('nameMentionsLegales') }}" method='GET'>
-                            <p class="row">
+                            <p class="row" id="deux">
                                 <button class="col button button-fill color-orange">Mentions légales</button>   
                             </p>
                         </form>
 
                         <form action="{{ route('nameAccueil') }}" method='GET'>
-                            <p class="row">
+                            <p class="row" id="trois">
                                 <button class="col button button-fill color-orange">Retour accueil</button>   
                             </p>
                         </form>
@@ -52,25 +52,25 @@
             <div id="button">  
 
                 <form action='activite' method='GET'>
-                    <p class="row">
+                    <p class="row" id="quatre">
                         <button class="col button button-fill color-green">Activités</button>
                     </p>
                 </form>
 
                 <form action="{{ route('nameLocalisation') }}" method='GET'>
-                    <p class="row">
+                    <p class="row" id="cinq">
                         <button class="col button button-fill color-orange">Localisation</button>   
                     </p>
                 </form>
 
                 <form action='reseaux'method='GET'>
-                    <p class="row">
+                    <p class="row" id="six">
                         <button class="col button button-fill color-red">Réseaux</button>
                     </p>
                 </form>
 
                 <form action='demarche'method='GET'>
-                    <p class="row">
+                    <p class="row" id="sept">
                         <button class="col button button-fill color-blue">Démarches</button>
                     </p>
                 </form>

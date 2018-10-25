@@ -19,6 +19,8 @@ Route::get('Accueil', 'AccueilController@show')->name('nameAccueil');
 
 Route::get('activite', 'activiteController@show')->name('nameActivites');
 
+Route::get('biip', 'activiteController@biip')->name('nameActivites');
+
 Route::get('Partenaires', 'PartenairesController@show')->name('namePartenaires');
 
 Route::get('Mentionslegales', 'mentionsLegalesController@show')->name('nameMentionsLegales');

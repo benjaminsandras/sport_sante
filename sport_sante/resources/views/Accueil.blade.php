@@ -14,14 +14,14 @@
     
 
         try {
-            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
         }
         catch(Exception $e)
         {
             die('Erreur : ' . $e->getMessage());
         }
 
-        $reponse = $db->query('SELECT * FROM Image WHERE id=2');
+        $reponse = $db->query('SELECT * FROM Image WHERE id=1');
         while($donnees=$reponse->fetch()){
             echo '<body id="style" style="background-image:url(' . $donnees['description'] . ');background-repeat: no-repeat;background-size:cover;background-position: center center;background-attachment: fixed;Z-index: -1"> ' . '</body>';
         }
@@ -39,14 +39,14 @@
                 <?php
 
                     try {
-                        $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+                        $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
                     }
                     catch(Exception $e)
                     {
                         die('Erreur : ' . $e->getMessage());
                     }
 
-                    $reponse = $db->query('SELECT * FROM Image WHERE id=3');
+                    $reponse = $db->query('SELECT * FROM Image WHERE id=2');
                     while($donnees=$reponse->fetch()){
                         echo '<img class="displayed" src=" ' . $donnees['description'] . ' ">';
                     }
@@ -112,14 +112,14 @@
         <?php
 
             try {
-                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
             }
             catch(Exception $e)
             {
                 die('Erreur : ' . $e->getMessage());
             }
 
-            $reponse = $db->query('SELECT * FROM Image WHERE id=4');
+            $reponse = $db->query('SELECT * FROM Image WHERE id=3');
             while($donnees=$reponse->fetch()){
                 echo '<img class="displayed2" src=" ' . $donnees['description'] . ' ">';
             }
@@ -128,14 +128,14 @@
         <?php
 
             try {
-                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
             }
             catch(Exception $e)
             {
                 die('Erreur : ' . $e->getMessage());
             }
 
-            $reponse = $db->query('SELECT * FROM Image WHERE id=5');
+            $reponse = $db->query('SELECT * FROM Image WHERE id=4');
             while($donnees=$reponse->fetch()){
                 echo '<img class="displayed3" src=" ' . $donnees['description'] . ' ">';
             }

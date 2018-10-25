@@ -1,4 +1,4 @@
-.row {
+#un,#deux,#trois,#quatre,#cinq,#six,#sept{
     width: 200px;
     margin-left: auto;
     margin-right: auto;
@@ -11,8 +11,9 @@
     margin-right: auto;
     /* margin-top: 10%; */
 }
+
 #button {
-    margin-top: 20%;
+    margin-top: 8%;
 }
 
 .right {
@@ -20,6 +21,30 @@
     margin-top: 5%;
 }
 
+IMG.displayed {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50%;
+    width: 10%; 
+}
 
+IMG.displayed2 {
+    display: block;
+    right:0;
+    position: fixed;
+    bottom:0;
+    height: 20%;
+    width: auto;
+    max-block-size: 30%;
+}
 
-
+IMG.displayed3{
+    display: block;
+    left:0;
+    position: fixed;
+    bottom:0;
+    height: auto;
+    width: auto;
+    max-block-size: 15%;
+}

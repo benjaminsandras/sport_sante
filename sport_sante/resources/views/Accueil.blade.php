@@ -14,7 +14,9 @@
     
 
         try {
+            
             $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+        
         }
         catch(Exception $e)
         {
@@ -41,7 +43,9 @@
                 <?php
 
                     try {
+                        
                         $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+                    
                     }
                     catch(Exception $e)
                     {
@@ -115,7 +119,9 @@
         <?php
 
             try {
+
                 $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+
             }
             catch(Exception $e)
             {
@@ -131,7 +137,9 @@
         <?php
 
             try {
+
                 $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+
             }
             catch(Exception $e)
             {

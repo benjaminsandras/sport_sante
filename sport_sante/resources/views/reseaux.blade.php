@@ -12,6 +12,7 @@ Réseaux
   <button>test</button>
 </form> -->
 
+<!--
 <div class="list">
   <ul>
     <li>
@@ -29,6 +30,29 @@ Réseaux
       </a>
     </li>
   </ul>
+</div>
+-->
+
+<div>
+  <form method="GET" action="">
+    <label for="choix_trie">Trier par :</label>
+    <button name="choix_trie">
+      <select name="methode_trie">
+        <option value="1" >Alphabétique</option>
+        <option value="2" selected>Date d'ajout</option>
+        <!-- 
+        option a rajouter plus tard
+
+        <option value="3" >Localisation</option>
+        -->
+      </select>
+    </button>
+    <br>
+    <br>
+    <input type="submit" name="submit">
+    <br>
+    <br>
+  </form>
 </div>
 
 <table>

@@ -14,7 +14,11 @@
     
 
         try {
-            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+<<<<<<< HEAD
+            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'helder', 'Rastatengo32');
+=======
+            $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+>>>>>>> a5e2922e8fd1cf06c933bb2b6bede18ba94f5647
         }
         catch(Exception $e)
         {
@@ -23,7 +27,7 @@
 
         $reponse = $db->query('SELECT * FROM Image WHERE id=1');
         while($donnees=$reponse->fetch()){
-            echo '<body id="style" style="background-image:url(' . $donnees['description'] . ');background-repeat: no-repeat;background-size:cover;background-position: center center;background-attachment: fixed;Z-index: -1"> ' . '</body>';
+            echo '<body id="style" style="background-image:url(' . $donnees['description'] . ');background-repeat: no-repeat;background-size:cover;background-position: center center;background-attachment: fixed;Z-index: 0"> ' . '</body>';
         }
     ?>    
 
@@ -39,7 +43,11 @@
                 <?php
 
                     try {
-                        $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+<<<<<<< HEAD
+                        $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'helder', 'Rastatengo32');
+=======
+                        $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+>>>>>>> a5e2922e8fd1cf06c933bb2b6bede18ba94f5647
                     }
                     catch(Exception $e)
                     {
@@ -57,19 +65,19 @@
                     
 
                         <form action="{{ route('namePartenaires') }}" method='GET'>
-                            <p class="row" id="un">
+                            <p class="elevation-hover-20" id="un">
                                 <button class="col button button-fill color-orange">Partenaires</button>   
                             </p>
                         </form>
 
                         <form action="{{ route('nameMentionsLegales') }}" method='GET'>
-                            <p class="row" id="deux">
+                            <p class="elevation-hover-20" id="deux">
                                 <button class="col button button-fill color-orange">Mentions légales</button>   
                             </p>
                         </form>
 
                         <form action="{{ route('nameAccueil') }}" method='GET'>
-                            <p class="row" id="trois">
+                            <p class="elevation-hover-20" id="trois">
                                 <button class="col button button-fill color-orange">Retour accueil</button>   
                             </p>
                         </form>
@@ -83,25 +91,25 @@
             <div id="button">  
 
                 <form action='activite' method='GET'>
-                    <p class="row" id="quatre">
+                    <p class="elevation-hover-20" id="quatre">
                         <button class="col button button-fill color-green">Activités</button>
                     </p>
                 </form>
 
                 <form action="{{ route('nameLocalisation') }}" method='GET'>
-                    <p class="row" id="cinq">
+                    <p class="elevation-hover-20" id="cinq">
                         <button class="col button button-fill color-orange">Localisation</button>   
                     </p>
                 </form>
 
                 <form action='reseaux'method='GET'>
-                    <p class="row" id="six">
+                    <p class="elevation-hover-20" id="six">
                         <button class="col button button-fill color-red">Réseaux</button>
                     </p>
                 </form>
 
                 <form action='demarche'method='GET'>
-                    <p class="row" id="sept">
+                    <p class="elevation-hover-20" id="sept">
                         <button class="col button button-fill color-blue">Démarches</button>
                     </p>
                 </form>
@@ -112,7 +120,11 @@
         <?php
 
             try {
-                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+<<<<<<< HEAD
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'helder', 'Rastatengo32');
+=======
+                $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+>>>>>>> a5e2922e8fd1cf06c933bb2b6bede18ba94f5647
             }
             catch(Exception $e)
             {
@@ -128,7 +140,11 @@
         <?php
 
             try {
-                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+<<<<<<< HEAD
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'helder', 'Rastatengo32');
+=======
+                $db =new PDO('mysql:host=localhost;dbname=sportsante;charset=utf8', 'helder', 'Rastatengo32');
+>>>>>>> a5e2922e8fd1cf06c933bb2b6bede18ba94f5647
             }
             catch(Exception $e)
             {

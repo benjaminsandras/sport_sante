@@ -12,10 +12,5 @@ class AccueilController extends Controller
 
     }
 
-    public function PostActivite()
-    {
-        return view('activite');
-
-    }
 }
 

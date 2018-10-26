@@ -1,0 +1,13 @@
+#titre_mentions{
+    text-align: center;
+}
+
+#text_mentions
+{
+    max-width: 50%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    font-size: 150%;
+}

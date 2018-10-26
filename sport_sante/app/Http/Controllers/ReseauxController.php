@@ -38,7 +38,7 @@ class ReseauxController extends Controller
 
     public function trie_alphabetique()
     {
-        $reseaux = reseaux::orderBy('name', 'asc')
+        $reseaux = reseaux::orderBy('nom', 'asc')
                ->get();
         return view('reseaux', compact("reseaux"));
     }

@@ -1,4 +1,4 @@
-#un,#deux,#trois,#quatre,#cinq,#six,#sept{
+#un,#deux,#trois,#quatre,#cinq,#six,#sept {
     width: 150px;
     margin-left: auto;
     margin-right: auto;
@@ -23,10 +23,10 @@
 
 IMG.displayed {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 50%;
-    width: 10%; 
+    margin-left: 33%;
+    margin-right: 40%;
+    height: 80%;
+    width: 30%; 
 }
 
 IMG.displayed2 {
@@ -68,6 +68,12 @@ IMG.displayed3{
 }
 
 .col-90 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.elevation-hover-18 {
+    width: 150px;
     margin-left: auto;
     margin-right: auto;
 }

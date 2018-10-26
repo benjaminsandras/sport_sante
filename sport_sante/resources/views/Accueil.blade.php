@@ -38,6 +38,8 @@
                     <i class="icon f7-icons color-black">menu</i>
                 </a>
             </div>
+
+            <div id="logo">
                 <?php
 
                     try {
@@ -55,6 +57,7 @@
                         echo '<img class="displayed" src=" ' . $donnees['description'] . ' ">';
                     }
                 ?>     
+            </div>
             <div class="popover popover-links">
                 <div class="popover-inner">
                     <div class="list">

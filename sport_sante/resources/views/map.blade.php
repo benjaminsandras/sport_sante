@@ -16,8 +16,24 @@
             
             <script>
                 var maCarte = L.map('maCarte').setView([43.650000,0.583333], 7);
-                var marker = L.marker([46.52863469527167,2.43896484375]).addTo(maCarte);
-
+            </script>
+                    <?php 
+                        try {
+                            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
+                        }
+                        catch(Exception $e)
+                        {
+                            die('Erreur : ' . $e->getMessage());
+                        }
+    
+                        $reponse = $db->query('SELECT * FROM Club ');
+                        while($donnees=$reponse->fetch()){
+                            echo '<script type="text/javascript"> var marker = L.marker(' . $donnees['coordonnee'] . ' ).addTo(maCarte);</script>' ;
+                        }
+                    ?>
+                    
+            <script>
+                
                 L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
                 maxZoom: 19,
                 attribution: ' <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'

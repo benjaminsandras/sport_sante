@@ -14,7 +14,7 @@
     
 
         try {
-            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
+            $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
         }
         catch(Exception $e)
         {
@@ -39,7 +39,7 @@
                 <?php
 
                     try {
-                        $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
+                        $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
                     }
                     catch(Exception $e)
                     {
@@ -112,7 +112,7 @@
         <?php
 
             try {
-                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
             }
             catch(Exception $e)
             {
@@ -128,7 +128,7 @@
         <?php
 
             try {
-                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'cdos', 'cdos');
+                $db =new PDO('mysql:host=localhost;dbname=sport_sante;charset=utf8', 'admin', 'azerty');
             }
             catch(Exception $e)
             {

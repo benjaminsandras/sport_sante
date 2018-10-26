@@ -25,10 +25,8 @@ Route::get('Partenaires', 'PartenairesController@show')->name('namePartenaires')
 
 Route::get('Mentionslegales', 'mentionsLegalesController@show')->name('nameMentionsLegales');
 
-Route::get('Localisation', 'localisationController@show')->name('nameLocalisation');
+Route::get('Localisation', 'mapController@show')->name('nameLocalisation');
 
 Route::get('reseaux', 'ReseauxController@show')->name('nameReseaux');
 
 Route::get('demarche', 'demarcheController@show')->name('nameDemarche');
-
-Route::get('map', 'mapController@show');

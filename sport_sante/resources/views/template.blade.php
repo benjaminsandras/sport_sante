@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="{{ asset('css/AccueilStyle.css') }}">
 
 </head>
-<body>
+<body id="templateBody">
 
 
     <div class="right">
@@ -24,43 +24,43 @@
                     <div class="list">
 
                         <form action='activite' method='GET'>
-                            <p class="row">
+                            <p class="elevation-hover-15">
                                 <button class="col button button-fill color-green">Activités</button>
                             </p>
                         </form>
 
                         <form action="{{ route('nameLocalisation') }}" method='GET'>
-                            <p class="row">
+                            <p class="elevation-hover-15">
                                 <button class="col button button-fill color-orange">Localisation</button>   
                             </p>
                         </form>
 
                         <form action='reseaux'method='GET'>
-                            <p class="row">
+                            <p class="elevation-hover-15">
                                 <button class="col button button-fill color-red">Réseaux</button>
                             </p>
                         </form>
 
                         <form action='demarche'method='GET'>
-                            <p class="row">
+                            <p class="elevation-hover-15">
                                 <button class="col button button-fill color-blue">Démarches</button>
                             </p>
                         </form>
 
                         <form action="{{ route('namePartenaires') }}" method='GET'>
-                            <p class="row">
+                            <p class="elevation-hover-15">
                                 <button class="col button button-fill color-black">Partenaires</button>   
                             </p>
                         </form>
 
                         <form action="{{ route('nameMentionsLegales') }}" method='GET'>
-                            <p class="row">
+                            <p class="elevation-hover-15">
                                 <button class="col button button-fill color-black">Mentions légales</button>   
                             </p>
                         </form>
 
                         <form action="{{ route('nameAccueil') }}" method='GET'>
-                            <p class="row">
+                            <p class="elevation-hover-15">
                                 <button class="col button button-fill color-black">Retour accueil</button>   
                             </p>
                         </form>

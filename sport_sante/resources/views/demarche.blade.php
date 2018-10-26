@@ -7,30 +7,41 @@
 @section('contenu')
 
 	
+<div>
+	<h1 id="titreDemarche">Nos Démarches</h1>
+</div>
 
 
+
+
+<div class="data-table card">
 	<table>
+		<thead>
 			<tr>
-				<th>Nom</th>
-				
-				
+				<th class="label-cell">Nom</th>
+				<th class="label-cell">Activité</th>
+				<th class="label-cell">Lieu</th>
+				<!-- <th class="tablet-only">Comment</th> -->
 			</tr>
-			@foreach($demarches as $demarche)
-				<tr>
-					<td>{{ $demarche->nom }}</td>
-					
-					
-					<!-- <td><form method="post" action="customer_detail"><input class="hidden" type="number" name="id" value="{{$customer->id}}"><button type="submit">Détails</button></form></td> -->
-				</tr>
-			@endforeach
-		</table>
+		</thead>
+		<tbody>
+			<tr>
+					@foreach($demarches as $demarche)
+        <td class="label-cell">{{ $demarche->nom }}</td>
+		<td class="label-cell">{{ $demarche->activite }}</td>
+        <td class="label-cell">{{ $demarche->lieu }}</td>
+		
+        <!-- <td class="tablet-only">I like it!</td> -->
+		@endforeach
+      </tr>
+    </tbody>
+  </table>
+</div>
 
-    <ul>
-        <li>le premier club</li>
-        <li>le deuxieme club</li>
-        <li>le troisème club</li>
-    </ul>
-
-    <button id="activites" type="submit">activités</button>
-    <button id="localisation" type="submit">localisation</button>
 @endsection
+
+		
+
+
+   
+	

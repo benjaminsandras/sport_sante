@@ -6,7 +6,7 @@ Réseaux
 
 @section('contenu')
 
-<h1>Réseaux</h1>
+<h1 id="titre_reseaux">Nos Réseaux</h1>
 
 <!-- <form action="Accueil" method="GET">
   <button>test</button>
@@ -14,11 +14,8 @@ Réseaux
 
 <div class="list">
   <ul>
-    <!-- Smart select item -->
     <li>
-      <!-- Additional "smart-select" class -->
       <a href="#" class="item-link smart-select smart-select-init">
-        <!-- select -->
         <select name="fruits">
           <option id="1" value="alphabetique" selected>Alphabétique</option>
           <option id="2" value="date_ajout">date d'ajout</option>
@@ -26,13 +23,11 @@ Réseaux
         </select>
         <div class="item-content">
           <div class="item-inner">
-            <!-- Select label -->
             <div class="item-title">Trier par :</div>
           </div>
         </div>
       </a>
     </li>
-    <!-- Another smart selects or list view elements -->
   </ul>
 </div>
 
